@@ -23,6 +23,8 @@ To start a new notebook server, in a terminal, `cd` into a directory you want to
 
 which should open a tab in your default web browser.
 
+In jupyter, to execute a 'code cell', hit Shift-Enter. See Google for more help on usage.
+
 ### mne-python
 
 Dependencies-list slightly different from official mne-instructions; we'll just do:
@@ -69,6 +71,18 @@ For a Matlab-like IDE, in a terminal, execute
 Then, in a terminal, start the IDE with
 
 `spyder`
+
+### A note on graphics/plots in jupyter notebook
+
+To send the output of plotting commands to the notebook, place the following line __at the very top (first line)__ of the notebook (and execute it with Shift-Enter):
+
+`%matplotlib inline`
+
+If you instead want to have the plots appear in separate windows, execute this:
+
+`%matplotlib qt`
+
+__This is particularly relevant when doing interactive plotting, such as with `raw.plot()`__
 
 ## Dataset
 * optages ved MEG tirsdag 9-12
