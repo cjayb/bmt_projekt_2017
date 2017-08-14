@@ -6,6 +6,9 @@ Installere [MNE — MNE 0.15.dev0 documentation](http://www.martinos.org/mne/dev
 Se [Install Python and MNE-Python — MNE 0.15.dev0 documentation](http://www.martinos.org/mne/dev/install_mne_python.html).
 ### Anaconda
 Python og alle mulige nyttige moduler fra [Continuum | Home](https://www.continuum.io)
+
+Her er en [Youtube video](https://youtu.be/YJC6ldI3hWk) jeg ikke har set, men kunne være nyttig.
+
 ### jupyter notebook
 Se [Project Jupyter](jupyter.org)
 `conda install notebook`
