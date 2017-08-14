@@ -3,8 +3,10 @@
 Installere [MNE — MNE 0.15.dev0 documentation](http://www.martinos.org/mne/dev/index.html) og følge [Tutorials](http://www.martinos.org/mne/stable/tutorials.html) & [Examples](http://www.martinos.org/mne/stable/auto_examples/index.html) til at analysere et visuel dataset.
 
 ## Installation
+
 Se [Install Python and MNE-Python — MNE 0.15.dev0 documentation](http://www.martinos.org/mne/dev/install_mne_python.html).
 ### Anaconda
+
 Python og alle mulige nyttige moduler fra [Continuum | Home](https://www.continuum.io)
 
 Her er en [Youtube video](https://youtu.be/YJC6ldI3hWk) jeg ikke har set, men kunne være nyttig.
@@ -14,6 +16,12 @@ Her er en [Youtube video](https://youtu.be/YJC6ldI3hWk) jeg ikke har set, men ku
 Se [Project Jupyter](http://jupyter.org)
 
 `conda install notebook`
+
+To start a new notebook server, in a terminal, `cd` into a directory you want to start writing code in, then execute
+
+`jupyter notebook`
+
+which should open a tab in your default web browser.
 
 ### mne-python
 
@@ -35,7 +43,7 @@ Windows is a little trickier…
 
 ### mne-python example datasets
 
-Open a terminal, `cd` to a folder you want the example data to be downloaded, then start `ipython` and execute
+Open a terminal, `cd` to a folder you want the example data to be downloaded, then execute `ipython` and copy-paste the following lines:
 
 ```python
 import mne
@@ -45,6 +53,22 @@ from mne.datasets import sample
 
 data_path = sample.data_path()
 ```
+
+If you move the data to another location, you have to update (edit) the following file:
+
+```bash
+cat ~/.mne/mne-python.json  # this just prints the contents
+```
+
+### Optional install: Spyder
+
+For a Matlab-like IDE, in a terminal, execute
+
+`conda install spyder`
+
+Then, in a terminal, start the IDE with
+
+`spyder`
 
 ## Dataset
 * optages ved MEG tirsdag 9-12
