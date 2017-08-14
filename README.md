@@ -10,8 +10,11 @@ Python og alle mulige nyttige moduler fra [Continuum | Home](https://www.continu
 Her er en [Youtube video](https://youtu.be/YJC6ldI3hWk) jeg ikke har set, men kunne være nyttig.
 
 ### jupyter notebook
-Se [Project Jupyter](jupyter.org)
+
+Se [Project Jupyter](http://jupyter.org)
+
 `conda install notebook`
+
 ### mne-python
 We’ll want the development version. On Linux and OS X, this will do the trick:
 ```bash
