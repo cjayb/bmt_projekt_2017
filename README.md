@@ -105,3 +105,7 @@ The [Epoching and averaging (ERP/ERF) — MNE 0.14 documentation](http://www.mar
 	* [see bottom of this page](http://www.martinos.org/mne/stable/auto_tutorials/plot_artifacts_correction_filtering.html) for details
 * save epochs to disk (fast loading from here on)
 ## Visualisation…
+
+### Stimulus array
+
+<img src="stimuli.jpeg">
