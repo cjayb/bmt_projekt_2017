@@ -108,4 +108,22 @@ The [Epoching and averaging (ERP/ERF) — MNE 0.14 documentation](http://www.mar
 
 ### Stimulus array
 
-<img src="stimuli.jpeg">
+<img src="stimuli.jpeg" width=400>
+
+### Plots of evoked responses
+
+Use `evoked.plot_join()` suitably; do amplitudes and/or topographies vary in some consistent manner?
+
+## Decoding
+
+See [this page](https://martinos.org/mne/dev/auto_tutorials/plot_sensors_decoding.html#temporal-decoding) for a dev-version tutorial.
+
+Let's try to decode up/down then left/right (binary classification), using the `SlidingEstimator`-example.
+
+Another interesting thing to try could be identifying the quadrant. Multi-class decoding is a bit trickier, though, can we figure it out? The scoring function needs to be `roc_auc`, for sure.
+
+A final potentially interesting thing to try is `GeneralizingEstimator` for the model that worked "best" in the more simple case above.
+
+### Note on the `y`-variable (target classes)
+
+For each classification model, `y` (a vector) needs to be created from the `events`, specifically the final column. Instead of values 101-136, we'll need to encode what we're trying to classify into (fewer) values of `y`.
